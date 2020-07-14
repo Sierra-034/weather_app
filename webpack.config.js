@@ -5,7 +5,7 @@ module.exports = {
     // Configuración de los archivos JS
     entry: "./src/app/index.js",
     output: {
-        path: path.join(__dirname, "dist"),  // Crea una carpeta llamada "disr" en el directorio donde se encuentra este archivo
+        path: path.join(__dirname, "docs"),  // Crea una carpeta llamada "disr" en el directorio donde se encuentra este archivo
         filename: "bundle.js"
     },
 
