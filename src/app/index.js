@@ -1,7 +1,7 @@
 require("./index.css");
 
 const { Weather } = require("./weather");
-const { UI } = require("./UI");
+const { UI } = require("./ui");
 const { Store } = require("./store");
 
 const store = new Store();
@@ -12,7 +12,6 @@ const weather = new Weather(city, countryCode);
 
 async function fetchWeather() {
     const data = await weather.getWeather();
-    console.log(data);
     ui.render(data);
 }
 
